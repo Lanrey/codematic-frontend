@@ -44,7 +44,8 @@ export const useCommentsStore = defineStore('comments', {
         this.error = null;
         return { status: true, message: "Comments Fetched Successfully"};
       } catch (error: any) {
-        this.error = error.message || 'An error occurred';
+        console.log("error", error);
+        this.error = error.response.data.message || 'An error occurred';
         return { status: false, message: this.error};
       } finally {
         this.loading = false;

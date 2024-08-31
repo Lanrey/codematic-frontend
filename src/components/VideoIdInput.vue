@@ -56,9 +56,9 @@ async function handleFetchComments() {
 
      console.log("Response", response);
      if (!response.status) {
-     // error.value = response.message
-     toast.success("Fetching video details, Click on fetch comments, after you see the details");
-    
+
+     toast.error(response.message);
+ 
      }
       
     } catch (error: any) {

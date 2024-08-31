@@ -37,7 +37,8 @@ export const useVideoStore = defineStore('video', {
         this.videoDetails = response.data.data;
         this.error = null;
       } catch (error: any) {
-        this.error = error.message || 'An error occurred';
+        console.log("Error", error);
+        this.error = error.response.data.message || 'An error occurred';
       } finally {
         this.loading = false;
       }
