@@ -11,6 +11,9 @@
     "composite": true,
     "noEmit": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "paths": {
+      "vue/__globalTypes_3.4_false": ["./node_modules/vue/__globalTypes_3.4_false.d.ts"]
+    },
 
     "module": "ESNext",
     "moduleResolution": "Bundler",
