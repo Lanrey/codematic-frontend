@@ -5,8 +5,8 @@
     <div v-else-if="videoDetails" class="video-details">
       <h2 class="title">{{ videoDetails.title }}</h2>
       <div class="stats">
-        <span><strong>Views:</strong> {{ formatNumber(videoDetails.viewCount) }}</span>
-        <span><strong>Likes:</strong> {{ formatNumber(videoDetails.likeCount) }}</span>
+        <span><strong>Views:</strong> {{ videoDetails.viewCount }}</span>
+        <span><strong>Likes:</strong> {{ videoDetails.likeCount }}</span>
       </div>
       <p class="description">{{ videoDetails.description }}</p>
     </div>

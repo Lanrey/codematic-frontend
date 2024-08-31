@@ -61,7 +61,7 @@ async function handleFetchComments() {
     
      }
       
-    } catch (error) {
+    } catch (error: any) {
      // error.value = err.message || 'Failed to fetch comments. Please try again'
      toast.error(error.message || 'Failed to fetch comments. Please try again');
     }
